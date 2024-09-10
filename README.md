@@ -1,0 +1,1 @@
+Python code to auto download the latest data from GOES-16 Global Lightning Mapper and convert it to Placefile format for use in GR2Analyst, GRLevel3, WSV3, SuperCellWX and any Software that supports GRLevelX Placefile Format.
