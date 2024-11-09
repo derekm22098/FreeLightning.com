@@ -72,7 +72,7 @@ glm_files = glob(f'OR_GLM-L2-LCFA_G16_*.nc')
 flash_data = []
 time_stamp = datetime.datetime.now().strftime("%I:%M:%S %p")
 
-#header = "Title: GLM Lightning Flashes (" + time_stamp +  ")\nRefreshSeconds: 30\nIconFile: 1, 20, 20, 10, 10, glm.png\n\n"
+header = "Title: GLM Lightning Flashes (" + time_stamp +  ")\nRefreshSeconds: 30\nIconFile: 1, 20, 20, 10, 10, glm.png\n\n"
 
 for i in range(num_of_files):
         if i < len(glm_files):
@@ -84,7 +84,7 @@ for i in range(num_of_files):
                 flash_data.append(IconStatement)
     
 with open(f'Lightning(GLM).txt', 'w') as f:
-        #f.write(header)
+        f.write(header)
         for line in flash_data:
             f.write(line)
 
