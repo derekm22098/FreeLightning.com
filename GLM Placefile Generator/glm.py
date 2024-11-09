@@ -83,7 +83,7 @@ for i in range(num_of_files):
                 IconStatement = f"Icon: {lat}, {lon}, 000, 1, 1\n"
                 flash_data.append(IconStatement)
     
-with open(f'Strikes(GLM).txt', 'w') as f:
+with open(f'Lightning(GLM).txt', 'w') as f:
         #f.write(header)
         for line in flash_data:
             f.write(line)
@@ -96,4 +96,4 @@ for file in nc_files:
             pass
             
 
-print(f"[save] Strikes(GLM).txt\n")
+print(f"[save] Lightning(GLM).txt\n")
